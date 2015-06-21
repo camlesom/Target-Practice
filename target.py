@@ -6,7 +6,6 @@ import time
 t1 = Turtle()
 circle_radius = 200
 circle_inner_radius = 20
-circle_diameter = circle_radius * 2
  
 def origin_circle(turtle, radius, x, y, wn):
 	wn.delay(0)
@@ -22,10 +21,8 @@ def draw_bullseye(turtle, x, y, wn):
 	for radius in range(circle_radius, circle_inner_radius, -40):
 		if color:
 			turtle.fillcolor("red")
-			#print("red")
 		else:
 			turtle.fillcolor("white")
-			#print("white")
 		origin_circle(turtle,radius,x,y,wn)
 		color = not color
 
